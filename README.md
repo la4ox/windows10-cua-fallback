@@ -52,6 +52,15 @@ If a copy already exists, inspect it first, then use `-Force`. The installer kee
 
 Restart Codex if the new skill is not discovered. Invoke it as `$windows-cua-fallback` only after official native capture has failed for one specific app.
 
+## Make fallback routing persistent (optional)
+
+Installing the skill makes it available, but does not guarantee that Codex will select it automatically after a native capture failure. After you have verified the fallback on a harmless app, review and copy the [optional routing snippet](windows-cua-fallback/references/agent-routing.md) into the instruction scope you want:
+
+- `~/.codex/AGENTS.md` for a personal default across projects; or
+- the repository-root `AGENTS.md` for one project only.
+
+Start a new Codex run or session after editing the instructions, then confirm that the expected guidance was loaded. The installer never creates or modifies `AGENTS.md` automatically.
+
 ## Validate the project
 
 ```powershell
