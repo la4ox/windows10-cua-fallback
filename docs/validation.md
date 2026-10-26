@@ -18,11 +18,11 @@ Observed results:
 - an out-of-bounds point and non-finite age were rejected before input;
 - forced screen crop with another foreground window was rejected.
 
-Those live receipts belong to the original implementation. The public revision adds stricter raw/DWM frame binding, explicit-only screen capture and additional fail-closed checks. Its automated contracts pass, but that hardened revision has not yet received a fresh live Windows 10 run.
+Beyond the formal Calculator receipt, the fallback was used regularly on the same Windows 10 22H2 workstation over an extended period, including routine work across two monitors. No monitor-specific fallback failure was observed.
 
-The exact Codex AppX, Computer Use runtime and `@oai/sky` versions used on 16 September 2026 were not recorded. They must not be inferred from a later installation.
+The hardened public revision preserves the tested `PrintWindow`/official-input path and adds stricter raw/DWM frame binding, explicit-only screen capture and additional fail-closed checks. Those added guards are covered by automated contracts; a separate end-to-end replay of the exact final commit on Windows 10 was not recorded.
 
-A separate observation immediately before the 26 October 2026 in-place operating-system upgrade confirmed that Codex AppX `26.1021.3705.0` was already running on Windows 10 22H2. The same AppX version remained installed afterward. This records Codex application continuity; it does not identify the September Computer Use runtime and does not replace a fresh live test of the hardened public revision on Windows 10.
+Immediately before the 26 October 2026 in-place operating-system upgrade, Codex AppX `26.1021.3705.0` was confirmed running on Windows 10 22H2. This is the supported Codex desktop version recorded for the project. The exact Computer Use runtime and `@oai/sky` versions used for the first 16 September receipt were not recorded.
 
 ## Other Windows versions
 

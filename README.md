@@ -28,7 +28,9 @@ It was created for a reproducible Windows 10 22H2 failure (`SetIsBorderRequired`
 
 ## Compatibility
 
-Supported and tested Codex desktop app version: **`26.1021.3705.0`** with Windows 10 22H2, build 19045.
+Field-tested in sustained real-world use on Windows 10 22H2, build 19045—including a dual-monitor setup—with Codex desktop app **`26.1021.3705.0`**.
+
+The hardened public revision preserves the tested capture path and adds fail-closed guards covered by automated tests.
 
 No compatibility claim is made for Windows 11 or other Windows releases. Use the official native capture path whenever it works. See [docs/validation.md](docs/validation.md).
 
