@@ -34,6 +34,8 @@ It was created for a reproducible Windows 10 22H2 failure (`SetIsBorderRequired`
 
 No compatibility claim is made for Windows 11 or other Windows releases. Use the official native capture path whenever it works. See [docs/validation.md](docs/validation.md).
 
+The exact dated Codex/Computer Use versions used for maintainer validation are recorded in [docs/validation.md](docs/validation.md); the word “current” is intentionally avoided because that stack changes independently of this repository.
+
 ## Install the skill
 
 Prerequisites:

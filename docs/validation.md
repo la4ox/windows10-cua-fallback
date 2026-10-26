@@ -20,9 +20,22 @@ Observed results:
 
 Those live receipts belong to the original implementation. The public revision adds stricter raw/DWM frame binding, explicit-only screen capture and additional fail-closed checks. Its automated contracts pass, but that hardened revision has not yet received a fresh live Windows 10 run.
 
+The exact Codex AppX, Computer Use runtime and `@oai/sky` versions used on 16 September 2026 were not recorded. They must not be inferred from a later installation.
+
 ## Other Windows versions
 
 No compatibility claim is made. The hardened code records raw and DWM frames, uses the full raw frame for `PrintWindow`, makes screen crop explicit-only, and rejects coordinate authorization when coordinate origins are ambiguous. These defenses reduce risk but do not establish support on an untested operating-system/runtime combination.
+
+## Maintainer toolchain snapshot
+
+Repository validation on 27 October 2026 used:
+
+- Codex Windows AppX `26.1021.3705.0`;
+- Computer Use runtime/app marker `26.1021.31345`;
+- `@oai/sky` `0.7.13`;
+- native `codex-cli 0.164.0-alpha.11.1`.
+
+This is a dated maintenance receipt, not a rolling “latest” declaration and not an operating-system compatibility claim.
 
 ## CI boundary
 
