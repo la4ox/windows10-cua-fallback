@@ -1,17 +1,20 @@
 ---
 name: windows-cua-fallback
-description: Capture and inspect one native Windows 10 app window when official Codex Computer Use can enumerate or control it but native screenshot capture repeatedly fails. Use only after a confirmed native capture failure; use browser control for browser tasks.
+description: Capture and inspect one native Windows 10 app window when desktop-hosted Codex Computer Use can enumerate or control it but native screenshot capture repeatedly fails. Use only after a confirmed native capture failure; use browser control for browser tasks.
 ---
 
 # Windows CUA Fallback
 
 Restore visual observation without replacing the official `@oai/sky` inventory, accessibility or guarded input path.
 
+This skill requires Computer Use hosted by the ChatGPT/Codex desktop app. Do not claim standalone Codex CLI support merely because the desktop installation contains a `codex-cli` binary.
+
 Read the installed `computer-use` skill first. Its target selection, confirmation policy, forbidden surfaces, observe/action/refresh loop and recovery rules remain authoritative. Try official native capture first and retry it only as that skill allows. A working official capture ends this fallback workflow.
 
 ## Boundaries
 
 - Native Windows apps only. Use Chrome or the in-app browser for browser tasks.
+- Desktop-hosted Computer Use only. Standalone Codex CLI is unverified and unsupported by this skill.
 - Never use this fallback for terminals, ChatGPT/Codex, authentication, password managers, Windows security/privacy settings, protected content or another surface forbidden by `computer-use`.
 - Capture exactly one window returned by the current `sky.list_apps()` or `sky.list_windows()` result. Never invent or reuse a stale window object.
 - Do not patch or replace the signed OpenAI helper.

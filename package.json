@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Unofficial fail-closed native window capture fallback for Codex Computer Use on Windows",
+  "description": "Unofficial fail-closed Win10 capture fallback for desktop Computer Use",
   "scripts": {
     "check:node": "node --check windows-cua-fallback/scripts/cua_fallback.mjs && node --check legacy/install-codex-workspace-runtime-win10.mjs",
     "test:node": "node --test tests/*.test.mjs"

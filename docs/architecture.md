@@ -2,13 +2,15 @@
 
 ## Primary path
 
-The official Codex Computer Use path remains authoritative:
+The official Computer Use path hosted by the ChatGPT/Codex desktop app remains authoritative:
 
 1. `@oai/sky` inventories apps and returns a window object.
 2. Native accessibility and screenshot APIs are attempted.
 3. Guarded official input is used for any interaction.
 
 The fallback begins only when steps 1 and 3 work but native screenshot capture repeatedly fails.
+
+The presence of a `codex-cli` executable beneath a desktop installation is not evidence that standalone CLI can host the plugin, native helper, app approvals or `node_repl`. This project does not support that configuration.
 
 ## Components
 

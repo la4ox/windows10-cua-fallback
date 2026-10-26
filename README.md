@@ -2,7 +2,7 @@
 
 [![Validate](https://github.com/la4ox/windows10-cua-fallback/actions/workflows/validate.yml/badge.svg)](https://github.com/la4ox/windows10-cua-fallback/actions/workflows/validate.yml)
 
-An unofficial, fail-closed screenshot fallback for Codex Computer Use on Windows when the official native app inventory and input path work, but native window capture fails.
+An unofficial, fail-closed screenshot fallback for Computer Use in the ChatGPT/Codex desktop app on Windows 10 when the official native app inventory and input path work, but native window capture fails.
 
 It was created for a reproducible Windows 10 22H2 failure (`SetIsBorderRequired`, `0x80004002`). It does **not** patch, replace, inject into, or redistribute the signed OpenAI Computer Use helper.
 
@@ -30,7 +30,7 @@ It was created for a reproducible Windows 10 22H2 failure (`SetIsBorderRequired`
 
 | Platform | Result | Scope |
 | --- | --- | --- |
-| Windows 10 22H2, build 19045 | Historical live pass | Original Calculator/DPI 96 capture and clicks; the hardened public revision has contract tests but still needs a fresh Win10 live run |
+| Windows 10 22H2, build 19045 | Historical live pass | Original Calculator/DPI 96 capture and clicks; a later pre-upgrade observation used Codex AppX `26.1021.3705.0`; the hardened public revision still needs a fresh Win10 live run |
 
 No compatibility claim is made for Windows 11 or other Windows releases. Use the official native capture path whenever it works. See [docs/validation.md](docs/validation.md).
 
@@ -43,6 +43,8 @@ Prerequisites:
 - ChatGPT/Codex desktop with the official Computer Use plugin enabled.
 - Windows 10 22H2, build 19045. Other builds are not claimed as supported.
 - Python 3.10+ with Pillow. Prefer the Python returned by Codex workspace dependencies when available.
+
+Standalone Codex CLI use is not supported or verified. The desktop app can contain a `codex-cli` binary internally; that does not make the CLI a Computer Use host.
 
 From PowerShell:
 

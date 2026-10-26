@@ -2,6 +2,8 @@
 
 `windows10-cua-fallback` is an unofficial community workaround. It is not developed, endorsed, supported, or distributed by OpenAI or Microsoft.
 
+The supported project shape requires the ChatGPT/Codex desktop app and its official Computer Use plugin. Standalone Codex CLI use is not claimed.
+
 The software is provided **as is**, without warranty of any kind. Window capture and input automation can expose sensitive on-screen information, interact with the wrong UI when assumptions fail, or behave differently across Windows builds, display scaling, GPU drivers and application frameworks. You are responsible for reviewing the target, output directory, permissions and requested action before use.
 
 In particular:
