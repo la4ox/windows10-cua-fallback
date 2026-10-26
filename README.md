@@ -34,17 +34,16 @@ It was created for a reproducible Windows 10 22H2 failure (`SetIsBorderRequired`
 
 No compatibility claim is made for Windows 11 or other Windows releases. Use the official native capture path whenever it works. See [docs/validation.md](docs/validation.md).
 
-The exact dated Codex/Computer Use versions used for maintainer validation are recorded in [docs/validation.md](docs/validation.md); the word “current” is intentionally avoided because that stack changes independently of this repository.
+Supported and tested Codex desktop app version: **`26.1021.3705.0`**.
 
 ## Install the skill
 
 Prerequisites:
 
 - ChatGPT/Codex desktop with the official Computer Use plugin enabled.
+- Codex desktop app `26.1021.3705.0`.
 - Windows 10 22H2, build 19045. Other builds are not claimed as supported.
 - Python 3.10+ with Pillow. Prefer the Python returned by Codex workspace dependencies when available.
-
-Standalone Codex CLI use is not supported or verified. The desktop app can contain a `codex-cli` binary internally; that does not make the CLI a Computer Use host.
 
 From PowerShell:
 

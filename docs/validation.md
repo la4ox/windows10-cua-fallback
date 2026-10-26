@@ -28,16 +28,13 @@ A separate observation immediately before the 26 October 2026 in-place operating
 
 No compatibility claim is made. The hardened code records raw and DWM frames, uses the full raw frame for `PrintWindow`, makes screen crop explicit-only, and rejects coordinate authorization when coordinate origins are ambiguous. These defenses reduce risk but do not establish support on an untested operating-system/runtime combination.
 
-## Maintainer toolchain snapshot
+## Supported Codex version
 
-Repository validation on 27 October 2026 used:
+Supported and tested Codex desktop app version:
 
-- Codex Windows AppX `26.1021.3705.0`;
-- Computer Use runtime/app marker `26.1021.31345`;
-- `@oai/sky` `0.7.13`;
-- desktop-bundled `codex-cli 0.164.0-alpha.11.1`.
+- `26.1021.3705.0`
 
-This is a dated maintenance receipt, not a rolling “latest” declaration, an operating-system compatibility claim, or evidence of standalone CLI support. All Computer Use validation was hosted by the desktop app.
+This version was present on Windows 10 immediately before the in-place operating-system upgrade and was used for repository validation on 27 October 2026.
 
 ## CI boundary
 

@@ -10,8 +10,6 @@ The official Computer Use path hosted by the ChatGPT/Codex desktop app remains a
 
 The fallback begins only when steps 1 and 3 work but native screenshot capture repeatedly fails.
 
-The presence of a `codex-cli` executable beneath a desktop installation is not evidence that standalone CLI can host the plugin, native helper, app approvals or `node_repl`. This project does not support that configuration.
-
 ## Components
 
 ### `cua_fallback.mjs`
