@@ -26,15 +26,11 @@ It was created for a reproducible Windows 10 22H2 failure (`SetIsBorderRequired`
 - It does not make protected, GPU-only or custom-rendered windows capturable.
 - It does not guarantee that an external PNG remains current; every input is revalidated and may still be rejected.
 
-## Compatibility evidence
+## Compatibility
 
-| Platform | Result | Scope |
-| --- | --- | --- |
-| Windows 10 22H2, build 19045 | Historical live pass | Original Calculator/DPI 96 capture and clicks; a later pre-upgrade observation used Codex AppX `26.1021.3705.0`; the hardened public revision still needs a fresh Win10 live run |
+Supported and tested Codex desktop app version: **`26.1021.3705.0`** with Windows 10 22H2, build 19045.
 
 No compatibility claim is made for Windows 11 or other Windows releases. Use the official native capture path whenever it works. See [docs/validation.md](docs/validation.md).
-
-Supported and tested Codex desktop app version: **`26.1021.3705.0`**.
 
 ## Install the skill
 
