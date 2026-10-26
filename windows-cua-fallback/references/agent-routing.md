@@ -12,4 +12,3 @@ Use this only when a user explicitly asks to add persistent routing guidance to 
 - Use `$windows-cua-fallback` only after the official native screenshot path has reproducibly failed while the exact target window remains enumerable and controllable. Keep all official Computer Use approvals, confirmation rules, and forbidden-surface restrictions in force.
 - Never use the fallback for browsers, terminals, ChatGPT/Codex, authentication dialogs, password managers, or Windows security and privacy settings.
 ```
-
