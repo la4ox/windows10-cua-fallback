@@ -22,6 +22,7 @@ $required = @(
     'LICENSE',
     'windows-cua-fallback\SKILL.md',
     'windows-cua-fallback\agents\openai.yaml',
+    'windows-cua-fallback\references\agent-routing.md',
     'windows-cua-fallback\scripts\cua_fallback.mjs',
     'windows-cua-fallback\scripts\window_snapshot.py',
     'legacy\install-codex-workspace-runtime-win10.mjs',

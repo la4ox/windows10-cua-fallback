@@ -47,6 +47,7 @@ Assert-ContainedPath -Parent $codexHomeFull -Child $backup -Label 'Backup direct
 $expected = @(
     'SKILL.md',
     'agents\openai.yaml',
+    'references\agent-routing.md',
     'scripts\cua_fallback.mjs',
     'scripts\window_snapshot.py'
 )

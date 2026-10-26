@@ -72,6 +72,7 @@ The legacy tool performs only a manifest preflight by default. Applying an insta
 - [Validation evidence and live test](docs/validation.md)
 - [Troubleshooting](docs/troubleshooting.md)
 - [Legacy runtime recovery](docs/legacy-runtime-installer.md)
+- [Optional AGENTS.md routing snippet](windows-cua-fallback/references/agent-routing.md)
 - [Security policy](SECURITY.md)
 
 ## License

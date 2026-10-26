@@ -14,6 +14,7 @@ $source = Join-Path $root 'windows-cua-fallback'
 $relativeFiles = @(
     'SKILL.md',
     'agents\openai.yaml',
+    'references\agent-routing.md',
     'scripts\cua_fallback.mjs',
     'scripts\window_snapshot.py'
 )

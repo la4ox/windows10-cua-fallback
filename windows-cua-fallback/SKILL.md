@@ -75,6 +75,10 @@ If any error occurs after input may have started, the outcome is unknown. Do not
 
 `Window.id` is treated as an HWND because that contract was observed on tested Windows runtimes; it is not a public promise of `@oai/sky`. Stop if `IsWindow` rejects it.
 
+## Optional persistent routing
+
+If the user explicitly asks to add durable Computer Use/browser/fallback routing to an existing `AGENTS.md`, read [references/agent-routing.md](references/agent-routing.md). Treat it as a reviewed snippet, not permission to create or edit instructions automatically.
+
 ## Limits
 
 `PrintWindow` can return blank content for protected, GPU-only, UWP or custom-rendered surfaces. Screen crop is never automatic and may include overlapping visible UI. The fallback stops when neither method is safe. Mixed-DPI and multi-monitor behavior must be observed rather than assumed.
