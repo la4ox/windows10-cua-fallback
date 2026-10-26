@@ -1,0 +1,23 @@
+# Local validation artifacts
+.tmp/
+artifacts/
+*.png
+*.json.tmp
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Editors
+.idea/
+.vscode/
+*.user

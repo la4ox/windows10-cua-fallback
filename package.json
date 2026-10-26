@@ -1,0 +1,15 @@
+{
+  "name": "windows10-cua-fallback",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Unofficial fail-closed native window capture fallback for Codex Computer Use on Windows",
+  "scripts": {
+    "check:node": "node --check windows-cua-fallback/scripts/cua_fallback.mjs && node --check legacy/install-codex-workspace-runtime-win10.mjs",
+    "test:node": "node --test tests/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

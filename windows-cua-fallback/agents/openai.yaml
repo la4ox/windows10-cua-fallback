@@ -1,0 +1,4 @@
+interface:
+  display_name: "Windows CUA Fallback"
+  short_description: "Recover Win10 capture after official CUA screenshots fail"
+  default_prompt: "Use $windows-cua-fallback for this one native Windows app only after the official Computer Use screenshot path has failed."
